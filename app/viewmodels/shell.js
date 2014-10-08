@@ -9,9 +9,10 @@
         activate: function () {
             router.map([
                 { route: '', moduleId: 'viewmodels/home', title: "Home", nav: true },
+                { route: 'music', moduleId: 'viewmodels/music', nav: true },
                 /*{durandal:routes}*/
             ]).buildNavigationModel();
-            
+
             return router.activate();
         }
     };
