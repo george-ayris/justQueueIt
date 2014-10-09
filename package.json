@@ -26,6 +26,7 @@
     "grunt-svgmin": ">=0.2.0",
     "jshint-stylish": ">=0.1.5",
     "load-grunt-tasks": ">=0.3.0",
+    "node-spotify": "^0.6.0",
     "serve-static": "^1.6.3",
     "socket.io": "^1.1.0",
     "time-grunt": ">=0.2.8"

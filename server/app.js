@@ -1,5 +1,6 @@
 var connect = require('connect')
-  , serveStatic = require('serve-static');
+  , serveStatic = require('serve-static')
+  , spotify = require('./spotifyHandler');
 
 var indexLocation = '.';
 console.log(indexLocation);
@@ -13,6 +14,7 @@ io.sockets.on('connection', function(socket) {
 
     socket.on('play', function(message, callback) {
 	    console.log('play:', message);
+        spotify.spotifyTest();
     });
 
 	socket.on('search', function(message, callback) {

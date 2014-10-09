@@ -18,3 +18,8 @@ bld/
 dist/
 publish/
 .build/
+
+*.log
+
+# Spotify key
+*.key
