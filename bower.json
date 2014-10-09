@@ -1,17 +1,17 @@
 {
-	"name": "justQueueIt",
-	"version": "0.0.0",
-	"dependencies": {
-		"bootstrap": ">=3.0.0",
-		"font-awesome": ">=4.0.0",
-		
-		"durandal": ">=2.0.0",
-		"durandal-almond": "master",
-		"json2": "*"
-	},
-	"devDependencies": {
-		"mocha": "~1.17.1",
-		"should": "3.1.2",
-		"sinon": "http://sinonjs.org/releases/sinon-1.8.1.js"
-	}
+  "name": "justQueueIt",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": ">=3.0.0",
+    "font-awesome": ">=4.0.0",
+    "durandal": ">=2.0.0",
+    "durandal-almond": "master",
+    "json2": "*",
+    "socket.io-client": "~1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1",
+    "should": "3.1.2",
+    "sinon": "http://sinonjs.org/releases/sinon-1.8.1.js"
+  }
 }

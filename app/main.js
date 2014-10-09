@@ -7,6 +7,7 @@ requirejs.config({
         'knockout': '../bower_components/knockout.js/knockout.debug',
         'jquery': '../bower_components/jquery/jquery',
         'bootstrap': '../bower_components/bootstrap/dist/js/bootstrap',
+        'socket.io': '../bower_components/socket.io-client/'
         
     },
     shim: {

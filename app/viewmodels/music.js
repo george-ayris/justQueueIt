@@ -1,17 +1,5 @@
-define(['durandal/system', 'durandal/app', '../models/musicHandler'], function (system, app, music) {
+define(['durandal/system', 'durandal/app', '../models/musicHandler'], function (system, app, music, io) {
 	var vm ={};
-
-	vm.activate = function() {
-		system.log("**");
-	};
-
-	vm.attached = function() {
-		system.log('** attached catalog');
-	};
-
-	vm.canDeactivate = function() {
-		return true;
-	};
 
 	vm.playButtonClicked = function() {
 		system.log('play clicked');

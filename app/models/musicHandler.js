@@ -1,17 +1,19 @@
-define(['durandal/system'], function(system) {
+define(['durandal/system', 'socket.io/socket.io'], function(system, io) {
 	var API = {};
+	var socket = io.connect();
+
+	socket.on('connect', function() {
+		system.log('socket connected');
+	});
 
 	API.play = function() {
 		// Send request to server
 		system.log('sending play music server request')
-		var playRequest = $.post("play")
-			.done(function() {
-				system.log("music playing");
-			})
-			.fail(function() {
-				system.log("play request failed");
-			})
-		return playRequest;
+		socket.emit('play', "play the music!");
+	};
+
+	API.search = function(searchTerm) {
+		socket.emit('search', searchTerm);
 	};
 
 	return API;
