@@ -1,3 +1,7 @@
 .control-button {
 	/*padding: 50px;*/
 }
+
+.bottom-pad {
+	padding-bottom: 10px;
+}
